@@ -9,5 +9,9 @@ package javaapplication1;
  * @author Valentino
  */
 public class Paciente {
+
+    public Paciente() {
+    }
+    
     
 }
