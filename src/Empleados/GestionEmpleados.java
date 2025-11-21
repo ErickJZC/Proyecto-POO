@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package javaapplication1;
+package Empleados;
 
 /**
  *
@@ -118,9 +118,11 @@ public class GestionEmpleados {
                     Empleados[j] = Empleados[j + 1];
                     
                 }
+                Empleados[NroEmpleados - 1] = null;
+                NroEmpleados--;
+                break;
             }
-            Empleados[NroEmpleados - 1] = null;
-            NroEmpleados--;
+            
         }
     }
     
@@ -132,9 +134,11 @@ public class GestionEmpleados {
                     Medicos[j] = Medicos[j + 1];
                     
                 }
+                Medicos[NroMedicos - 1] = null;
+                NroMedicos--;
+                break;
             }
-            Medicos[NroMedicos - 1] = null;
-            NroMedicos--;
+            
         }
     }
     
@@ -144,6 +148,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroEmpleados; i++) {
             if(Empleados[i] == Empleado){
                 Empleados[i].setDNI(DNI);
+                break;
             }
         }
     }
@@ -152,6 +157,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroMedicos; i++) {
             if(Medicos[i] == Medico){
                 Medicos[i].setDNI(DNI);
+                break;
             }
         }
     }
@@ -162,6 +168,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroEmpleados; i++) {
             if(Empleados[i] == Empleado){
                 Empleados[i].setNombres(Nombres);
+                break;
             }
         }
     }
@@ -170,6 +177,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroMedicos; i++) {
             if(Medicos[i] == Medico){
                 Medicos[i].setNombres(Nombres);
+                break;
             }
         }
     }
@@ -180,6 +188,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroEmpleados; i++) {
             if(Empleados[i] == Empleado){
                 Empleados[i].setApellidos(Apellidos);
+                break;
             }
         }
     }
@@ -188,6 +197,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroMedicos; i++) {
             if(Medicos[i] == Medico){
                 Medicos[i].setApellidos(Apellidos);
+                break;
             }
         }
     }
@@ -198,6 +208,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroEmpleados; i++) {
             if(Empleados[i] == Empleado){
                 Empleados[i].setRol(ROL);
+                break;
             }
         }
     }
@@ -206,6 +217,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroMedicos; i++) {
             if(Medicos[i] == Medico){
                 Medicos[i].setRol(ROL);
+                break;
             }
         }
     }
@@ -216,6 +228,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroEmpleados; i++) {
             if(Empleados[i] == Empleado){
                 Empleados[i].setDatosDeContacto(DatosDeContacto);
+                break;
             }
         }
     }
@@ -224,6 +237,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroMedicos; i++) {
             if(Medicos[i] == Medico){
                 Medicos[i].setDatosDeContacto(DatosDeContacto);
+                break;
             }
         }
     }
@@ -234,6 +248,7 @@ public class GestionEmpleados {
         for (int i = 0; i < NroEmpleados; i++) {
             if(Medicos[i] == Medico){
                Medicos[i].setEspecialidad(Especialidad);
+               break;
             }
         }
     }

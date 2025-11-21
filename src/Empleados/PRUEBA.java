@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package javaapplication1;
+package Empleados;
 
 /**
  *
@@ -17,8 +17,10 @@ public class PRUEBA {
         Empleado Jose = new Empleado("09328248", "Jose Tobi", "Zapata Perez", "Recepcionista", "Numero: 922730435");
         GestionEmpleados Gestion = new GestionEmpleados();
         Medico Gabriel = new Medico("70531699", "Gabriel Merino", "Chavez Huerta", "Medico", " Numero: 907821872", "Cardiología");
+        Empleado Paco = new Empleado("09324535", "Paco Poco", "Vilca Huaman", "Pendejo", "Numero: 904395535");
         
         Gestion.AgregarEmpleado(Jose);
+        Gestion.AgregarEmpleado(Paco);
         Gestion.AgregarEmpleado(Gabriel);
         
         Gestion.VerInfo();
@@ -31,6 +33,8 @@ public class PRUEBA {
         
         System.out.println("");
         Gestion.VerInfo();
+        
+        Gabriel.VerInfo();
     }
     
    
