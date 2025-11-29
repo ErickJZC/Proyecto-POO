@@ -102,6 +102,15 @@ public class MainFrame extends JFrame {
                         gestionEmpleados
                 );
                 break;
+            case MEDICO:
+                homePanel = new MedicoPanel(
+                        this,
+                        (Medico) empleado,
+                        gestionCitas,
+                        gestionHistorias,
+                        gestionPacientes
+                );
+                break;
             default:
                 return;
         }
